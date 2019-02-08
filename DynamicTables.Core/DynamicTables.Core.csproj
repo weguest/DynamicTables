@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.7.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="2.10.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\Enums\" />
+    <Folder Include="Entities\ValueObjects\" />
+    <Folder Include="Interfaces\Entities\" />
+    <Folder Include="Interfaces\Repositories\" />
+  </ItemGroup>
+</Project>

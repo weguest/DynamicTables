@@ -1,0 +1,14 @@
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.App.deps.json
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.App.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.App.pdb
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.Core.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.Infra.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.Core.pdb
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/bin/Debug/netstandard2.0/DynamicTables.Infra.pdb
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.csprojAssemblyReference.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.csproj.CoreCompileInputs.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.AssemblyInfoInputs.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.AssemblyInfo.cs
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.csproj.CopyComplete
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.App/obj/Debug/netstandard2.0/DynamicTables.App.pdb

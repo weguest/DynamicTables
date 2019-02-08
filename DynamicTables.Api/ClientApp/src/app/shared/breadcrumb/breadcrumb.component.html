@@ -1,0 +1,12 @@
+<!--
+<nav id="breadcrumb">
+  <div class="breadcrumb shadow-sm p-3 bg-white">
+      <a *ngFor="let breadcrumb of breadcrumbs" class="breadcrumb-item" [routerLink]="[breadcrumb.url, breadcrumb.params]">{{ breadcrumb.label }}</a>
+  </div>
+</nav>
+-->
+<ul class="breadcrumb shadow">
+  <li *ngFor="let breadcrumb of breadcrumbs" class="breadcrumb-item">
+    <a routerLink="{{breadcrumb.url}}"> {{ breadcrumb.label }} </a>
+  </li>
+</ul>

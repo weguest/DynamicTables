@@ -1,0 +1,12 @@
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.csprojAssemblyReference.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.csproj.CoreCompileInputs.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.AssemblyInfoInputs.cache
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.AssemblyInfo.cs
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/bin/Debug/netstandard2.0/DynamicTables.Infra.deps.json
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/bin/Debug/netstandard2.0/DynamicTables.Infra.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/bin/Debug/netstandard2.0/DynamicTables.Infra.pdb
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/bin/Debug/netstandard2.0/DynamicTables.Core.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/bin/Debug/netstandard2.0/DynamicTables.Core.pdb
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.csproj.CopyComplete
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.dll
+/Users/josebraz/Documents/Projetos/NetCore/DynamicTables/DynamicTables.Infra/obj/Debug/netstandard2.0/DynamicTables.Infra.pdb

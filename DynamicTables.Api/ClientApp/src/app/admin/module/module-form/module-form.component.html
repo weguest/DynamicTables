@@ -1,0 +1,70 @@
+<div class="card mb-1">
+  <h5 class="card-header"> {{ sharedDataService.title }} </h5>
+  <div class="card-body p-2">
+
+    <div class="float-left">
+      <button class="btn btn-light btn-sm mr-2" (click)="this.back();"> <i class="fas fa-arrow-left"></i> BACK </button>
+    </div>
+
+    <div class="float-right">
+      <button class="btn btn-light btn-sm mr-1" (click)="this.save();"> <i class="far fa-save"></i> SAVE </button>
+      <button class="btn btn-light btn-sm mr-1" (click)="this.delete();"> <i class="far fa-trash-alt"></i> DELETE </button>
+      <button class="btn btn-light btn-sm mr-1" (click)="this.delete();"> <i class="fas fa-print"></i> PRINT </button>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <div class="card-text">
+      
+        <!--
+        active: true
+        created: "2019-01-12T18:46:48.412Z"
+        description: "Este é o módulo de vendas."
+        id: "5c3a3648c3ee19344c0cbd60"
+        label: "Vendas"
+        modified: "2019-01-12T18:46:48.412Z"
+        name: "Sales"
+        -->
+        <form id="myForm"> 
+            <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="txtId">Id</label>
+                  <input type="text" [(ngModel)]="model.id" class="form-control" name="txtId" id="txtId" aria-describedby="helpId" placeholder="Id"  readonly="readonly" />
+                  <small id="helpId" class="form-text text-muted">Object Id</small>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label for="txtName">Name</label>
+                  <input type="text" [(ngModel)]="model.name" class="form-control" name="txtName" id="txtName" aria-describedby="helpId" placeholder="Id" />
+                  <small id="helpId" class="form-text text-muted">Name of the module</small>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label for="txtLabel">Label</label>
+                  <input type="text" [(ngModel)]="model.label" (change)="this.isModified=true" class="form-control" name="txtLabel" id="txtLabel" aria-describedby="helpId" placeholder="Id" />
+                  <small id="helpId" class="form-text text-muted">Label of the module</small>
+                </div>
+
+                <div class="form-group col-md-3">
+                  <label for="txtIcon">Icon</label>
+                  <input type="text" [(ngModel)]="model.icon" class="form-control" name="txtIcon" id="txtIcon" aria-describedby="helpId" placeholder="Fontawesome Icon" />
+                  <small id="helpIcon" class="form-text text-muted">Icon of fontawesome</small>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="form-group col-md-12">
+                <label for="txtDescription">Description</label>
+                <textarea rows="4" type="text" [(ngModel)]="model.description" class="form-control" name="txtDescription" id="txtDescription" aria-describedby="helpId" placeholder="Id"></textarea>
+                <small id="helpId" class="form-text text-muted">Compleate description of the module</small>
+              </div>
+
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
