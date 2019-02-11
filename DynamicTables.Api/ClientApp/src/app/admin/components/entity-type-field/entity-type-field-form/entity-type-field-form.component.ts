@@ -2,7 +2,7 @@ import { ActivatedRoute } from '@angular/router';
 import {Location} from '@angular/common';
 import { Component, ViewChild, AfterViewInit, OnInit } from '@angular/core';
 import { EntityTypeFieldService } from '../../../services/entity-type-field.service';
-import { SharedDataService } from './../../../../shared/services/shared.data.service';
+import { SharedDataService } from '../../../../shared/services/shared.data.service';
 
 import 'brace/index';
 import 'brace/theme/chrome';
@@ -16,11 +16,11 @@ import 'brace/mode/csharp';
 declare let ace: any;
 
 @Component({
-  selector: 'app-entitytypefield-form',
-  templateUrl: './entitytypefield-form.component.html',
-  styleUrls: ['./entitytypefield-form.component.css']
+  selector: 'app-entity-type-field-form',
+  templateUrl: './entity-type-field-form.component.html',
+  styleUrls: ['./entity-type-field-form.component.css']
 })
-export class EntitytypefieldFormComponent implements OnInit {
+export class EntityTypeFieldFormComponent implements OnInit {
 
   public isModified = false;
   public model: any = {};

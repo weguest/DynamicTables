@@ -4,10 +4,10 @@ import { EntityTypeService } from 'src/app/admin/services/entity-type.service';
 
 @Component({
   selector: 'app-entitytype-list',
-  templateUrl: './entitytype-list.component.html',
-  styleUrls: ['./entitytype-list.component.css']
+  templateUrl: './entity-type-list.component.html',
+  styleUrls: ['./entity-type-list.component.css']
 })
-export class EntitytypeListComponent implements OnInit {
+export class EntityTypeListComponent implements OnInit {
   constructor(
     public service: EntityTypeService
   ) { }
@@ -40,6 +40,8 @@ export class EntitytypeListComponent implements OnInit {
   };
 
   defaultColDef = { resizable: true };
+
+  rowSelection = 'single';
 
   rowData = null;
 

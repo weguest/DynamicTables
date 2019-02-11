@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { SharedDataService } from 'src/app/shared/services/shared.data.service';
 
 @Component({
-  selector: 'app-entitytypefield',
-  templateUrl: './entitytypefield.component.html',
-  styleUrls: ['./entitytypefield.component.css']
+  selector: 'app-entity-type-field',
+  templateUrl: './entity-type-field.component.html',
+  styleUrls: ['./entity-type-field.component.css']
 })
-export class EntitytypefieldComponent implements OnInit {
+export class EntityTypeFieldComponent implements OnInit {
 
   constructor(public sharedDataService: SharedDataService) {
     sharedDataService.title = 'My Fields';

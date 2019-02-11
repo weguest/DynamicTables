@@ -1,18 +1,23 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { GlobalConfigComponent } from './components/global-config/global-config.component';
 import { ModuleComponent } from './components/module/module.component';
-import { EntitytypeComponent } from './components/entitytype/entitytype.component';
-import { EntitytypefieldComponent } from './components/entitytypefield/entitytypefield.component';
 import { UserComponent } from './components/user/user.component';
 import { UserGroupComponent } from './components/user-group/user-group.component';
 import { ModuleListComponent } from './components/module/module-list/module-list.component';
 import { ModuleFormComponent } from './components/module/module-form/module-form.component';
-import { EntitytypefieldListComponent } from './components/entitytypefield/entitytypefield-list/entitytypefield-list.component';
-import { EntitytypefieldFormComponent } from './components/entitytypefield/entitytypefield-form/entitytypefield-form.component';
-import { EntitytypeListComponent } from './components/entitytype/entitytype-list/entitytype-list.component';
-import { EntitytypeFormComponent } from './components/entitytype/entitytype-form/entitytype-form.component';
+
+import { EntityTypeComponent } from './components/entity-type/entity-type.component';
+import { EntityTypeFormComponent } from './components/entity-type/entity-type-form/entity-type-form.component';
+import { EntityTypeListComponent } from './components/entity-type/entity-type-list/entity-type-list.component';
+
+
+import { EntityTypeFieldComponent } from './components/entity-type-field/entity-type-field.component';
+import { EntityTypeFieldFormComponent } from './components/entity-type-field/entity-type-field-form/entity-type-field-form.component';
+import { EntityTypeFieldListComponent } from './components/entity-type-field/entity-type-field-list/entity-type-field-list.component';
+
 
 
 const routes: Routes = [
@@ -36,11 +41,11 @@ const routes: Routes = [
     data: { title: 'EntityType' },
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'list'},
-      { path: 'list', component: EntitytypeListComponent, data: { title: 'List' } },
-      { path: 'new', component: EntitytypeFormComponent, data: { title: 'New' } },
-      { path: 'edit/:id', component: EntitytypeFormComponent, data: { title: 'Edit' } },
-      { path: 'delete/:id', component: EntitytypeFormComponent, data: { title: 'Delete' } },
-      { path: 'details/:id', component: EntitytypeFormComponent, data: { title: 'Details' } }
+      { path: 'list', component: EntityTypeListComponent, data: { title: 'List' } },
+      { path: 'new', component: EntityTypeFormComponent, data: { title: 'New' } },
+      { path: 'edit/:id', component: EntityTypeFormComponent, data: { title: 'Edit' } },
+      { path: 'delete/:id', component: EntityTypeFormComponent, data: { title: 'Delete' } },
+      { path: 'details/:id', component: EntityTypeFormComponent, data: { title: 'Details' } }
     ]
   },
   {
@@ -48,11 +53,11 @@ const routes: Routes = [
     data: { title: 'Field' },
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'list'},
-      { path: 'list', component: EntitytypefieldListComponent, data: { title: 'List' } },
-      { path: 'new', component: EntitytypefieldFormComponent, data: { title: 'New' } },
-      { path: 'edit/:id', component: EntitytypefieldFormComponent, data: { title: 'Edit' } },
-      { path: 'delete/:id', component: EntitytypefieldFormComponent, data: { title: 'Delete' } },
-      { path: 'details/:id', component: EntitytypefieldFormComponent, data: { title: 'Details' } }
+      { path: 'list', component: EntityTypeFieldListComponent, data: { title: 'List' } },
+      { path: 'new', component: EntityTypeFieldFormComponent, data: { title: 'New' } },
+      { path: 'edit/:id', component: EntityTypeFieldFormComponent, data: { title: 'Edit' } },
+      { path: 'delete/:id', component: EntityTypeFieldFormComponent, data: { title: 'Delete' } },
+      { path: 'details/:id', component: EntityTypeFieldFormComponent, data: { title: 'Details' } }
     ]
   },
   { path: 'users', component: UserComponent, data: { title: 'Users' } },
