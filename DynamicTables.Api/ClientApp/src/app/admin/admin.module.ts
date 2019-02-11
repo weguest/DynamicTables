@@ -7,24 +7,25 @@ import { FormsModule } from '@angular/forms';
 
 import { AceEditorModule } from 'ng2-ace-editor';
 
-import { ModuleComponent } from './module/module.component';
-import { EntitytypeComponent } from './entitytype/entitytype.component';
-import { EntitytypefieldComponent } from './entitytypefield/entitytypefield.component';
-import { GlobalConfigComponent } from './global-config/global-config.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { ModuleComponent } from './components/module/module.component';
+import { EntitytypeComponent } from './components/entitytype/entitytype.component';
+import { EntitytypefieldComponent } from './components/entitytypefield/entitytypefield.component';
+import { GlobalConfigComponent } from './components/global-config/global-config.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AdminRoutingModule } from './admin-routing.module';
-import { UserComponent } from './user/user.component';
-import { UserGroupComponent } from './user-group/user-group.component';
-import { ModuleListComponent } from './module/module-list/module-list.component';
-import { ModuleFormComponent } from './module/module-form/module-form.component';
-import { ModuleService } from './module/module.service';
-import { FilterPipe } from '../shared/pipe/filter.pipe';
-import { EntitytypefieldFormComponent } from './entitytypefield/entitytypefield-form/entitytypefield-form.component';
-import { EntitytypefieldListComponent } from './entitytypefield/entitytypefield-list/entitytypefield-list.component';
-import { EntityTypeFieldService } from './entitytypefield/EntityTypeField.service';
-import { EntitytypeListComponent } from './entitytype/entitytype-list/entitytype-list.component';
-import { EntitytypeFormComponent } from './entitytype/entitytype-form/entitytype-form.component';
+import { UserComponent } from './components/user/user.component';
+import { UserGroupComponent } from './components/user-group/user-group.component';
+import { ModuleListComponent } from './components/module/module-list/module-list.component';
+import { ModuleFormComponent } from './components/module/module-form/module-form.component';
+import { ModuleService } from './services/module.service';
 
+import { EntitytypefieldFormComponent } from './components/entitytypefield/entitytypefield-form/entitytypefield-form.component';
+import { EntitytypefieldListComponent } from './components/entitytypefield/entitytypefield-list/entitytypefield-list.component';
+import { EntityTypeFieldService } from './services/entity-type-field.service';
+import { EntitytypeListComponent } from './components/entitytype/entitytype-list/entitytype-list.component';
+import { EntitytypeFormComponent } from './components/entitytype/entitytype-form/entitytype-form.component';
+import { SharedModule } from '../shared/shared.module';
+import { EntityTypeService } from './services/entity-type.service';
 
 
 @NgModule({
@@ -38,13 +39,12 @@ import { EntitytypeFormComponent } from './entitytype/entitytype-form/entitytype
     UserGroupComponent,
     ModuleListComponent,
     ModuleFormComponent,
-    FilterPipe,
     EntitytypefieldFormComponent,
     EntitytypefieldListComponent,
     EntitytypeListComponent,
     EntitytypeFormComponent
   ],
-  imports: [CommonModule,  AdminRoutingModule, HttpClientModule, FormsModule, AceEditorModule],
+  imports: [CommonModule,  AdminRoutingModule, HttpClientModule, FormsModule, AceEditorModule, SharedModule],
   exports: [
     RouterModule,
     ModuleComponent,
@@ -62,6 +62,7 @@ import { EntitytypeFormComponent } from './entitytype/entitytype-form/entitytype
   ],
   providers: [
     ModuleService,
+    EntityTypeService,
     EntityTypeFieldService
   ]
 })

@@ -1,0 +1,15 @@
+<div class="card mb-1">
+  <h5 class="card-header"> {{ sharedDataService.title }} </h5>
+  <div class="card-body p-2">
+
+    <div class="float-left">
+      <button class="btn btn-light btn-sm mr-2" (click)="this.back();"> <i class="fas fa-arrow-left"></i> BACK </button>
+    </div>
+
+    <div class="float-right">
+      <button class="btn btn-light btn-sm mr-1" (click)="this.save();"> <i class="far fa-save"></i> SAVE </button>
+      <button class="btn btn-light btn-sm mr-1" (click)="this.delete();"> <i class="far fa-trash-alt"></i> DELETE </button>
+      <button class="btn btn-light btn-sm mr-1" (click)="this.delete();"> <i class="fas fa-print"></i> PRINT </button>
+    </div>
+  </div>
+</div>

@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { GlobalConfigComponent } from './global-config/global-config.component';
-import { ModuleComponent } from './module/module.component';
-import { EntitytypeComponent } from './entitytype/entitytype.component';
-import { EntitytypefieldComponent } from './entitytypefield/entitytypefield.component';
-import { UserComponent } from './user/user.component';
-import { UserGroupComponent } from './user-group/user-group.component';
-import { ModuleListComponent } from './module/module-list/module-list.component';
-import { ModuleFormComponent } from './module/module-form/module-form.component';
-import { EntitytypefieldListComponent } from './entitytypefield/entitytypefield-list/entitytypefield-list.component';
-import { EntitytypefieldFormComponent } from './entitytypefield/entitytypefield-form/entitytypefield-form.component';
-import { EntitytypeListComponent } from './entitytype/entitytype-list/entitytype-list.component';
-import { EntitytypeFormComponent } from './entitytype/entitytype-form/entitytype-form.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { GlobalConfigComponent } from './components/global-config/global-config.component';
+import { ModuleComponent } from './components/module/module.component';
+import { EntitytypeComponent } from './components/entitytype/entitytype.component';
+import { EntitytypefieldComponent } from './components/entitytypefield/entitytypefield.component';
+import { UserComponent } from './components/user/user.component';
+import { UserGroupComponent } from './components/user-group/user-group.component';
+import { ModuleListComponent } from './components/module/module-list/module-list.component';
+import { ModuleFormComponent } from './components/module/module-form/module-form.component';
+import { EntitytypefieldListComponent } from './components/entitytypefield/entitytypefield-list/entitytypefield-list.component';
+import { EntitytypefieldFormComponent } from './components/entitytypefield/entitytypefield-form/entitytypefield-form.component';
+import { EntitytypeListComponent } from './components/entitytype/entitytype-list/entitytype-list.component';
+import { EntitytypeFormComponent } from './components/entitytype/entitytype-form/entitytype-form.component';
 
 
 const routes: Routes = [

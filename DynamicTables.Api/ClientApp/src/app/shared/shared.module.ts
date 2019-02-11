@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
 
-import { SharedDataService } from './shared.data.service';
+import { SharedDataService } from './services/shared.data.service';
 
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { NavbarFooterComponent } from './navbar-footer/navbar-footer.component';
-import { MasterPageComponent } from './master-page/master-page.component';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
-import { AppRoutingModule } from '../app-routing/app-routing.module';
-import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NavbarFooterComponent } from './components/navbar-footer/navbar-footer.component';
+import { MasterPageComponent } from './components/master-page/master-page.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { FilterPipe } from './pipe/filter.pipe';
+import { AgGridModule } from 'ag-grid-angular';
+
 
 @NgModule({
   declarations: [
+    FilterPipe,
     NavbarComponent,
     SidebarComponent,
     NavbarFooterComponent,
@@ -23,7 +26,8 @@ import { FilterPipe } from './pipe/filter.pipe';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    RouterModule,
+    AgGridModule.withComponents([])
   ],
   exports: [
     NavbarComponent,
@@ -31,7 +35,9 @@ import { FilterPipe } from './pipe/filter.pipe';
     NavbarFooterComponent,
     MasterPageComponent,
     BreadcrumbComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    AgGridModule,
+    FilterPipe
   ],
   providers: [SharedDataService]
 })

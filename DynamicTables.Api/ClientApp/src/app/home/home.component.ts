@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedDataService } from '../shared/shared.data.service';
+import { SharedDataService } from '../shared/services/shared.data.service';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +10,6 @@ export class HomeComponent implements OnInit {
 
   constructor(public sharedDataService: SharedDataService) {
     sharedDataService.title = 'Inicio';
-    sharedDataService.bc = [
-      { link: '/', title: 'Home', active: 'active' }
-    ];
   }
 
   ngOnInit() {

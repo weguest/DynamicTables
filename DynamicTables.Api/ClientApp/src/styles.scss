@@ -9,22 +9,15 @@ $border-radius-sm:            0rem !default;
 @import "node_modules/bootstrap/scss/bootstrap";
 
 $fa-font-path: "~font-awesome/fonts";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import "~font-awesome/scss/font-awesome";
 
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+$primary-color: #2196F3; // blue-500
+$accent-color: #FFD740; // amber-A200
+
+// Import the ag-Grid material theme
+@import '~ag-grid-community/dist/styles/ag-theme-material.css';
 
 

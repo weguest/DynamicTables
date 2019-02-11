@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from '../app.component';
 import { HomeComponent } from '../home/home.component';
-import { NotFoundPageComponent } from '../shared/not-found-page/not-found-page.component';
+import { NotFoundPageComponent } from '../shared/components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
     { path: '', component: AppComponent , data: { title: 'Home' }},
