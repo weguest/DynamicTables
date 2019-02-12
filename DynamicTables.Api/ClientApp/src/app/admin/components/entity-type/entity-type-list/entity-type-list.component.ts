@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { EntityTypeService } from 'src/app/admin/services/entity-type.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-entitytype-list',
@@ -9,9 +10,12 @@ import { EntityTypeService } from 'src/app/admin/services/entity-type.service';
 })
 export class EntityTypeListComponent implements OnInit {
   constructor(
-    public service: EntityTypeService
+    public service: EntityTypeService,
+    public router: Router
   ) { }
 
+  public gridApi;
+  public gridColumnApi;
 
   columnDefs = [
     {headerName: 'Id', field: 'id' },
@@ -51,7 +55,15 @@ export class EntityTypeListComponent implements OnInit {
   }
 
   onRowDoubleClicked(row): void {
+    this.router.navigate(['/admin/entitytype/edit/' + row.data.name ]);
     console.log(row);
+  }
+
+  onGridReady(params) {
+    this.gridApi = params.api;
+    this.gridColumnApi = params.columnApi;
+
+    this.gridApi.sizeColumnsToFit();
   }
 
 }

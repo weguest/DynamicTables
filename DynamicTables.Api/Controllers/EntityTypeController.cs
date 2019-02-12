@@ -29,10 +29,10 @@ namespace DynamicTables.Api.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<EntityType> Get(string id)
+        [HttpGet("{name}")]
+        public ActionResult<EntityType> Get(string name)
         {
-            var find = this._repository.Find(x => x.Id == id).FirstOrDefault();
+            var find = this._repository.GetByName( name );
             if (find == null)
             {
                 return NotFound();

@@ -13,3 +13,92 @@
     </div>
   </div>
 </div>
+
+<div class="card">
+    <div class="card-body">
+      <div class="card-text">
+
+
+
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-base-tab" data-toggle="tab" href="#nav-base" role="tab" aria-controls="nav-base" aria-selected="true">Main</a>
+                  <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CSS</a>
+                  <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">HTML</a>
+                  <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">JavaScript</a>
+                  <a class="nav-item nav-link" id="nav-code-tab" data-toggle="tab" href="#nav-code" role="tab" aria-controls="nav-code" aria-selected="false">Code CSharp</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane  border container-fluid show active pt-3" id="nav-base" role="tabpanel" aria-labelledby="nav-base-tab">
+
+
+                    <div class="row">
+                        <div class="form-group col-md-3">
+                          <label for="txtId">Id</label>
+                          <input type="text" [(ngModel)]="model.id" class="form-control" name="txtId" id="txtId" aria-describedby="helpId" placeholder="Id"  readonly="readonly" />
+                          <small id="helpId" class="form-text text-muted">Object Id</small>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                          <label for="txtName">Name</label>
+                          <input type="text" [(ngModel)]="model.name" class="form-control" name="txtName" id="txtName" aria-describedby="helpId" placeholder="Id" />
+                          <small id="helpId" class="form-text text-muted">Name of the module</small>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                          <label for="txtLabel">Label</label>
+                          <input type="text" [(ngModel)]="model.label" (change)="this.isModified=true" class="form-control" name="txtLabel" id="txtLabel" aria-describedby="helpId" placeholder="Id" />
+                          <small id="helpId" class="form-text text-muted">Label of the module</small>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                          <label for="txtIcon">Icon</label>
+                          <input type="text" [(ngModel)]="model.icon" class="form-control" name="txtIcon" id="txtIcon" aria-describedby="helpId" placeholder="Fontawesome Icon" />
+                          <small id="helpIcon" class="form-text text-muted">Icon of fontawesome</small>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                      <div class="form-group col-md-12">
+                        <label for="txtDescription">Description</label>
+                        <textarea rows="4" type="text" [(ngModel)]="model.description" class="form-control" name="txtDescription" id="txtDescription" aria-describedby="helpId" placeholder="Id"></textarea>
+                        <small id="helpId" class="form-text text-muted">Compleate description of the module</small>
+                      </div>
+                    </div>
+
+
+                </div>
+                <div class="tab-pane" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <ace-editor #editorcss [(text)]="model.css"  mode="css" [options]="{maxLines: 'Infinity'}" style="min-height: 660px; width:100%;"></ace-editor>
+                </div>
+                <div class="tab-pane" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ace-editor #editorhtml [(text)]="model.html"  mode="html" [options]="{maxLines: 'Infinity'}" style="min-height: 660px; width:100%;"></ace-editor>
+                </div>
+                <div class="tab-pane" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <ace-editor #editorjs [(text)]="model.javascript"  mode="javascript" [options]="{maxLines: 'Infinity'}" style="min-height: 660px; width:100%;"></ace-editor>
+                </div>
+                <div class="tab-pane" id="nav-code" role="tabpanel" aria-labelledby="nav-code-tab">
+                    <nav class="navbar navbar-light" style="background-color: #d9e0e6;">
+                        <div class="btn-group-sm" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary">Compile</button>
+                          <button type="button" class="btn btn-secondary">Import libriry</button>
+                        </div>
+                    </nav>
+                    <ace-editor #editorcode  [theme]="'chrome'" [(text)]="model.code"  mode="csharp" [options]="{maxLines: 'Infinity', enableBasicAutocompletion: true, enableSnippets: true, enableLiveAutocompletion: false}" style="min-height: 660px; width:100%;"></ace-editor>
+                </div>
+              </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
